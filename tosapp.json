@@ -1,0 +1,107 @@
+{
+  "app_id": "linkdingdocker",
+  "title": "Linkding",
+  "image": "sissbruecker/linkding:1.47.0",
+  "repo_name": "linkding",
+  "mode": "plain",
+  "container_port": 9090,
+  "category": [
+    "Utilities"
+  ],
+  "volumes": [
+    {
+      "host": "/Volume1/DockerAppData/linkdingdocker/data",
+      "container": "/etc/linkding/data"
+    }
+  ],
+  "env": {
+    "TZ": "Asia/Shanghai"
+  },
+  "auth": "sissbruecker",
+  "upstream_url": "https://github.com/sissbruecker/linkding",
+  "upstream_license": "MIT",
+  "descript": "Linkding is a minimal, fast bookmark manager: save links from the browser with the bookmarklet or extension, tag them, search titles, descriptions and full text, and keep an HTML archive of the pages you care about. It is self-hosted, has no ads or tracking, supports multiple users, and keeps everything in one SQLite database inside the application data folder.",
+  "release_note": "1. First release: Linkding 1.47.0 from Docker Hub as a non-root container. Fast bookmark manager with tags, full-text search, HTML archives and multi-user support; data stays in the application data folder.",
+  "important": "Requires DockerEngine (installed automatically if missing). Open the web UI and create the first account - it becomes the administrator; registration stays open until you disable it in Settings. All bookmarks, tags and archives live in DockerAppData/linkdingdocker/data. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal.",
+  "probe": {
+    "user_in_image": "(root)",
+    "entrypoint": null,
+    "cmd": [
+      "./bootstrap.sh"
+    ],
+    "exposed_ports": [
+      9090
+    ],
+    "declared_volumes": [],
+    "image_healthcheck": [
+      "CMD-SHELL",
+      "curl -f http://localhost:${LD_SERVER_PORT:-9090}/${LD_CONTEXT_PATH}health || exit 1"
+    ],
+    "digest": "sissbruecker/linkding@sha256:e35cb50e0581178f245125ffaa909c565416c94c9f22ace305a7d234a4345522",
+    "architecture": "x86_64",
+    "platforms": [
+      "x86_64",
+      "aarch64"
+    ],
+    "http_client_in_image": "curl",
+    "trial_run": {
+      "ok": true,
+      "http_code": "500",
+      "state": "running",
+      "paths": [],
+      "host_port": 18000,
+      "log_tail": "e_schema\n    with self.db(commit=True, close=True) as curs:\n         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/contextlib.py\", line 141, in __enter__\n    return next(self.gen)\n  File \"/etc/linkding/.venv/lib/python3.13/site-packages/huey/storage.py\", line 647, in db\n    conn = self.conn\n           ^^^^^^^^^\n  File \"/etc/linkding/.venv/lib/python3.13/site-packages/huey/storage.py\", line 639, in conn\n    self._state.set_connection(self._create_connection())\n                               ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/etc/linkding/.venv/lib/python3.13/site-packages/huey/storage.py\", line 719, in _create_connection\n    conn.execute('pragma journal_mode=\"%s\"' % self._journal_mode)\n    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nsqlite3.OperationalError: attempt to write a readonly database\nunable to load app 0 (mountpoint='') (callable not found or import error)\n*** no app loaded. going in full dynamic mode ***\n*** uWSGI is running in multiple interpreter mode ***\nspawned uWSGI master process (pid: 1)\nspawned uWSGI worker 1 (pid: 18, cores: 2)\nspawned uWSGI worker 2 (pid: 20, cores: 2)\n*** Stats server enabled on 127.0.0.1:9191 fd: 16 ***\nspawned uWSGI http 1 (pid: 22)\n--- no python application found, check your startup logs for errors ---\n[pid: 20|app: -1|req: -1/1] ::ffff:172.17.0.1 () {28 vars in 303 bytes} [Fri Nov 13 16:59:37 2026] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)",
+      "files_in_mounts": ""
+    },
+    "docker_hub": {},
+    "github": {
+      "owner": "sissbruecker",
+      "repo": "linkding",
+      "description": "Self-hosted bookmark manager that is designed be to be minimal, fast, and easy to set up using Docker.",
+      "license": "MIT",
+      "homepage": "https://linkding.link/"
+    }
+  },
+  "healthcheck": [
+    "CMD-SHELL",
+    "curl -f -s -o /dev/null http://127.0.0.1:9090/health || exit 1"
+  ],
+  "platform": "x86_64",
+  "user": "1000:1000",
+  "publisher": "Moechz",
+  "compose_project": "linkdingdocker",
+  "github_repo": "linkding",
+  "upstream_version": "1.47.0",
+  "release_tag_prefix": "v",
+  "version": "1.47.0-1",
+  "help": "https://github.com/Moechz/linkding/issues",
+  "official": "https://github.com/sissbruecker/linkding",
+  "license": "MIT",
+  "docker_socket": false,
+  "group_add": [],
+  "healthcheck_start_period": "45s",
+  "http_path": "/health",
+  "translations": {
+    "zh-cn": {
+      "descript": "Linkding 是一款极简、快速的书签管理器：用书签脚本或浏览器扩展一键收藏链接，打标签，按标题/描述/全文搜索，还能保存网页的 HTML 快照。完全自托管，没有广告与追踪，支持多用户，所有内容都存在应用数据目录里的一个 SQLite 数据库中。",
+      "important": "需要 DockerEngine（缺失时应用中心会自动安装）。打开界面后创建第一个账号，它就是管理员；注册入口默认开放，可在「设置」里关闭。书签、标签与网页快照都保存在 DockerAppData/linkdingdocker/data。界面为纯 HTTP，暴露到公网前请配置带 TLS 的反向代理。卸载并删除数据前请先备份 data 目录。",
+      "release_note": "1. 首个版本：基于 Docker Hub 的 Linkding 1.47.0，以非 root 容器运行。支持标签、全文搜索、HTML 快照与多用户；数据保存在应用数据目录。"
+    },
+    "zh-hk": {
+      "descript": "Linkding 是一款極簡、快速的書籤管理器：用書籤小工具或瀏覽器擴充一鍵收藏連結，打標籤，按標題/描述/全文搜尋，還能保存網頁的 HTML 快照。完全自託管，沒有廣告與追蹤，支援多使用者，所有內容都存在應用資料目錄裡的一個 SQLite 資料庫中。",
+      "important": "需要 DockerEngine（缺少時應用中心會自動安裝）。開啟介面後建立第一個帳號，它就是管理員；註冊入口預設開放，可在「設定」裡關閉。書籤、標籤與網頁快照都保存在 DockerAppData/linkdingdocker/data。介面為純 HTTP，公開到互聯網前請配置帶 TLS 的反向代理。解除安裝並刪除資料前請先備份 data 目錄。",
+      "release_note": "1. 首個版本：基於 Docker Hub 的 Linkding 1.47.0，以非 root 容器運行。支援標籤、全文搜尋、HTML 快照與多使用者；資料保存在應用資料目錄。"
+    }
+  },
+  "data_notes": "`/etc/linkding/data` (mounted from `DockerAppData/linkdingdocker/data`) holds `db.sqlite3`, the generated `secretkey.txt` and the `archive/` folder with saved page snapshots.",
+  "design_notes": [
+    "**No external database.** Linkding stores bookmarks in SQLite; the container runs as uid 1000 and only the data folder is persistent.",
+    "**First account = administrator.** Registration is open until the admin disables it, so no password is baked into the package."
+  ],
+  "limitations": [
+    "- The web UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet.",
+    "- The first registered account becomes the administrator - create it right after installing.",
+    "- Browser extensions need the instance URL; the bookmarklet works from any browser without extra setup."
+  ],
+  "host_port": 8006
+}

@@ -1,0 +1,195 @@
+# ===========================================================================
+# Multilingual file for the TOS 7 Docker application "linkdingdocker".
+# File name MUST be: <appid>.lang.  23-language superset (14 required by TOS).
+# The App Center picks the text matching the user's device language;
+# untranslated nodes fall back to English, which the official guide allows.
+# Fields: name (app title), auth (upstream author), descript (up to 512
+# chars), release_note, important (up to 512 chars).
+# Translations come from tosapp.json "translations"; run
+#   tosdocker lang <app>          to re-render this file
+#   tosdocker translate <app>     to see what still needs translating
+# ===========================================================================
+[en-us]
+name         = "Linkding"
+auth         = "sissbruecker"
+version      = "@@VERSION@@"
+descript     = "Linkding is a minimal, fast bookmark manager: save links from the browser with the bookmarklet or extension, tag them, search titles, descriptions and full text, and keep an HTML archive of the pages you care about. It is self-hosted, has no ads or tracking, supports multiple users, and keeps everything in one SQLite database inside the application data folder."
+release_note = "1. First release: Linkding 1.47.0 from Docker Hub as a non-root container. Fast bookmark manager with tags, full-text search, HTML archives and multi-user support; data stays in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and create the first account - it becomes the administrator; registration stays open until you disable it in Settings. All bookmarks, tags and archives live in DockerAppData/linkdingdocker/data. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[zh-cn]
+name         = "Linkding"
+auth         = "sissbruecker"
+version      = "@@VERSION@@"
+descript     = "Linkding 是一款极简、快速的书签管理器：用书签脚本或浏览器扩展一键收藏链接，打标签，按标题/描述/全文搜索，还能保存网页的 HTML 快照。完全自托管，没有广告与追踪，支持多用户，所有内容都存在应用数据目录里的一个 SQLite 数据库中。"
+release_note = "1. 首个版本：基于 Docker Hub 的 Linkding 1.47.0，以非 root 容器运行。支持标签、全文搜索、HTML 快照与多用户；数据保存在应用数据目录。"
+important    = "需要 DockerEngine（缺失时应用中心会自动安装）。打开界面后创建第一个账号，它就是管理员；注册入口默认开放，可在「设置」里关闭。书签、标签与网页快照都保存在 DockerAppData/linkdingdocker/data。界面为纯 HTTP，暴露到公网前请配置带 TLS 的反向代理。卸载并删除数据前请先备份 data 目录。"
+
+[zh-hk]
+name         = "Linkding"
+auth         = "sissbruecker"
+version      = "@@VERSION@@"
+descript     = "Linkding 是一款極簡、快速的書籤管理器：用書籤小工具或瀏覽器擴充一鍵收藏連結，打標籤，按標題/描述/全文搜尋，還能保存網頁的 HTML 快照。完全自託管，沒有廣告與追蹤，支援多使用者，所有內容都存在應用資料目錄裡的一個 SQLite 資料庫中。"
+release_note = "1. 首個版本：基於 Docker Hub 的 Linkding 1.47.0，以非 root 容器運行。支援標籤、全文搜尋、HTML 快照與多使用者；資料保存在應用資料目錄。"
+important    = "需要 DockerEngine（缺少時應用中心會自動安裝）。開啟介面後建立第一個帳號，它就是管理員；註冊入口預設開放，可在「設定」裡關閉。書籤、標籤與網頁快照都保存在 DockerAppData/linkdingdocker/data。介面為純 HTTP，公開到互聯網前請配置帶 TLS 的反向代理。解除安裝並刪除資料前請先備份 data 目錄。"
+
+[fr-fr]
+name         = "Linkding"
+auth         = "sissbruecker"
+version      = "@@VERSION@@"
+descript     = "Linkding is a minimal, fast bookmark manager: save links from the browser with the bookmarklet or extension, tag them, search titles, descriptions and full text, and keep an HTML archive of the pages you care about. It is self-hosted, has no ads or tracking, supports multiple users, and keeps everything in one SQLite database inside the application data folder."
+release_note = "1. First release: Linkding 1.47.0 from Docker Hub as a non-root container. Fast bookmark manager with tags, full-text search, HTML archives and multi-user support; data stays in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and create the first account - it becomes the administrator; registration stays open until you disable it in Settings. All bookmarks, tags and archives live in DockerAppData/linkdingdocker/data. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[de-de]
+name         = "Linkding"
+auth         = "sissbruecker"
+version      = "@@VERSION@@"
+descript     = "Linkding is a minimal, fast bookmark manager: save links from the browser with the bookmarklet or extension, tag them, search titles, descriptions and full text, and keep an HTML archive of the pages you care about. It is self-hosted, has no ads or tracking, supports multiple users, and keeps everything in one SQLite database inside the application data folder."
+release_note = "1. First release: Linkding 1.47.0 from Docker Hub as a non-root container. Fast bookmark manager with tags, full-text search, HTML archives and multi-user support; data stays in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and create the first account - it becomes the administrator; registration stays open until you disable it in Settings. All bookmarks, tags and archives live in DockerAppData/linkdingdocker/data. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[it-it]
+name         = "Linkding"
+auth         = "sissbruecker"
+version      = "@@VERSION@@"
+descript     = "Linkding is a minimal, fast bookmark manager: save links from the browser with the bookmarklet or extension, tag them, search titles, descriptions and full text, and keep an HTML archive of the pages you care about. It is self-hosted, has no ads or tracking, supports multiple users, and keeps everything in one SQLite database inside the application data folder."
+release_note = "1. First release: Linkding 1.47.0 from Docker Hub as a non-root container. Fast bookmark manager with tags, full-text search, HTML archives and multi-user support; data stays in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and create the first account - it becomes the administrator; registration stays open until you disable it in Settings. All bookmarks, tags and archives live in DockerAppData/linkdingdocker/data. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[es-es]
+name         = "Linkding"
+auth         = "sissbruecker"
+version      = "@@VERSION@@"
+descript     = "Linkding is a minimal, fast bookmark manager: save links from the browser with the bookmarklet or extension, tag them, search titles, descriptions and full text, and keep an HTML archive of the pages you care about. It is self-hosted, has no ads or tracking, supports multiple users, and keeps everything in one SQLite database inside the application data folder."
+release_note = "1. First release: Linkding 1.47.0 from Docker Hub as a non-root container. Fast bookmark manager with tags, full-text search, HTML archives and multi-user support; data stays in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and create the first account - it becomes the administrator; registration stays open until you disable it in Settings. All bookmarks, tags and archives live in DockerAppData/linkdingdocker/data. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[hu-hu]
+name         = "Linkding"
+auth         = "sissbruecker"
+version      = "@@VERSION@@"
+descript     = "Linkding is a minimal, fast bookmark manager: save links from the browser with the bookmarklet or extension, tag them, search titles, descriptions and full text, and keep an HTML archive of the pages you care about. It is self-hosted, has no ads or tracking, supports multiple users, and keeps everything in one SQLite database inside the application data folder."
+release_note = "1. First release: Linkding 1.47.0 from Docker Hub as a non-root container. Fast bookmark manager with tags, full-text search, HTML archives and multi-user support; data stays in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and create the first account - it becomes the administrator; registration stays open until you disable it in Settings. All bookmarks, tags and archives live in DockerAppData/linkdingdocker/data. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[ja-jp]
+name         = "Linkding"
+auth         = "sissbruecker"
+version      = "@@VERSION@@"
+descript     = "Linkding is a minimal, fast bookmark manager: save links from the browser with the bookmarklet or extension, tag them, search titles, descriptions and full text, and keep an HTML archive of the pages you care about. It is self-hosted, has no ads or tracking, supports multiple users, and keeps everything in one SQLite database inside the application data folder."
+release_note = "1. First release: Linkding 1.47.0 from Docker Hub as a non-root container. Fast bookmark manager with tags, full-text search, HTML archives and multi-user support; data stays in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and create the first account - it becomes the administrator; registration stays open until you disable it in Settings. All bookmarks, tags and archives live in DockerAppData/linkdingdocker/data. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[ko-kr]
+name         = "Linkding"
+auth         = "sissbruecker"
+version      = "@@VERSION@@"
+descript     = "Linkding is a minimal, fast bookmark manager: save links from the browser with the bookmarklet or extension, tag them, search titles, descriptions and full text, and keep an HTML archive of the pages you care about. It is self-hosted, has no ads or tracking, supports multiple users, and keeps everything in one SQLite database inside the application data folder."
+release_note = "1. First release: Linkding 1.47.0 from Docker Hub as a non-root container. Fast bookmark manager with tags, full-text search, HTML archives and multi-user support; data stays in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and create the first account - it becomes the administrator; registration stays open until you disable it in Settings. All bookmarks, tags and archives live in DockerAppData/linkdingdocker/data. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[pl-pl]
+name         = "Linkding"
+auth         = "sissbruecker"
+version      = "@@VERSION@@"
+descript     = "Linkding is a minimal, fast bookmark manager: save links from the browser with the bookmarklet or extension, tag them, search titles, descriptions and full text, and keep an HTML archive of the pages you care about. It is self-hosted, has no ads or tracking, supports multiple users, and keeps everything in one SQLite database inside the application data folder."
+release_note = "1. First release: Linkding 1.47.0 from Docker Hub as a non-root container. Fast bookmark manager with tags, full-text search, HTML archives and multi-user support; data stays in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and create the first account - it becomes the administrator; registration stays open until you disable it in Settings. All bookmarks, tags and archives live in DockerAppData/linkdingdocker/data. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[ru-ru]
+name         = "Linkding"
+auth         = "sissbruecker"
+version      = "@@VERSION@@"
+descript     = "Linkding is a minimal, fast bookmark manager: save links from the browser with the bookmarklet or extension, tag them, search titles, descriptions and full text, and keep an HTML archive of the pages you care about. It is self-hosted, has no ads or tracking, supports multiple users, and keeps everything in one SQLite database inside the application data folder."
+release_note = "1. First release: Linkding 1.47.0 from Docker Hub as a non-root container. Fast bookmark manager with tags, full-text search, HTML archives and multi-user support; data stays in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and create the first account - it becomes the administrator; registration stays open until you disable it in Settings. All bookmarks, tags and archives live in DockerAppData/linkdingdocker/data. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[tr-tr]
+name         = "Linkding"
+auth         = "sissbruecker"
+version      = "@@VERSION@@"
+descript     = "Linkding is a minimal, fast bookmark manager: save links from the browser with the bookmarklet or extension, tag them, search titles, descriptions and full text, and keep an HTML archive of the pages you care about. It is self-hosted, has no ads or tracking, supports multiple users, and keeps everything in one SQLite database inside the application data folder."
+release_note = "1. First release: Linkding 1.47.0 from Docker Hub as a non-root container. Fast bookmark manager with tags, full-text search, HTML archives and multi-user support; data stays in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and create the first account - it becomes the administrator; registration stays open until you disable it in Settings. All bookmarks, tags and archives live in DockerAppData/linkdingdocker/data. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[pt-pt]
+name         = "Linkding"
+auth         = "sissbruecker"
+version      = "@@VERSION@@"
+descript     = "Linkding is a minimal, fast bookmark manager: save links from the browser with the bookmarklet or extension, tag them, search titles, descriptions and full text, and keep an HTML archive of the pages you care about. It is self-hosted, has no ads or tracking, supports multiple users, and keeps everything in one SQLite database inside the application data folder."
+release_note = "1. First release: Linkding 1.47.0 from Docker Hub as a non-root container. Fast bookmark manager with tags, full-text search, HTML archives and multi-user support; data stays in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and create the first account - it becomes the administrator; registration stays open until you disable it in Settings. All bookmarks, tags and archives live in DockerAppData/linkdingdocker/data. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[ar-sa]
+name         = "Linkding"
+auth         = "sissbruecker"
+version      = "@@VERSION@@"
+descript     = "Linkding is a minimal, fast bookmark manager: save links from the browser with the bookmarklet or extension, tag them, search titles, descriptions and full text, and keep an HTML archive of the pages you care about. It is self-hosted, has no ads or tracking, supports multiple users, and keeps everything in one SQLite database inside the application data folder."
+release_note = "1. First release: Linkding 1.47.0 from Docker Hub as a non-root container. Fast bookmark manager with tags, full-text search, HTML archives and multi-user support; data stays in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and create the first account - it becomes the administrator; registration stays open until you disable it in Settings. All bookmarks, tags and archives live in DockerAppData/linkdingdocker/data. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[cs-cz]
+name         = "Linkding"
+auth         = "sissbruecker"
+version      = "@@VERSION@@"
+descript     = "Linkding is a minimal, fast bookmark manager: save links from the browser with the bookmarklet or extension, tag them, search titles, descriptions and full text, and keep an HTML archive of the pages you care about. It is self-hosted, has no ads or tracking, supports multiple users, and keeps everything in one SQLite database inside the application data folder."
+release_note = "1. First release: Linkding 1.47.0 from Docker Hub as a non-root container. Fast bookmark manager with tags, full-text search, HTML archives and multi-user support; data stays in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and create the first account - it becomes the administrator; registration stays open until you disable it in Settings. All bookmarks, tags and archives live in DockerAppData/linkdingdocker/data. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[he-il]
+name         = "Linkding"
+auth         = "sissbruecker"
+version      = "@@VERSION@@"
+descript     = "Linkding is a minimal, fast bookmark manager: save links from the browser with the bookmarklet or extension, tag them, search titles, descriptions and full text, and keep an HTML archive of the pages you care about. It is self-hosted, has no ads or tracking, supports multiple users, and keeps everything in one SQLite database inside the application data folder."
+release_note = "1. First release: Linkding 1.47.0 from Docker Hub as a non-root container. Fast bookmark manager with tags, full-text search, HTML archives and multi-user support; data stays in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and create the first account - it becomes the administrator; registration stays open until you disable it in Settings. All bookmarks, tags and archives live in DockerAppData/linkdingdocker/data. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[id-id]
+name         = "Linkding"
+auth         = "sissbruecker"
+version      = "@@VERSION@@"
+descript     = "Linkding is a minimal, fast bookmark manager: save links from the browser with the bookmarklet or extension, tag them, search titles, descriptions and full text, and keep an HTML archive of the pages you care about. It is self-hosted, has no ads or tracking, supports multiple users, and keeps everything in one SQLite database inside the application data folder."
+release_note = "1. First release: Linkding 1.47.0 from Docker Hub as a non-root container. Fast bookmark manager with tags, full-text search, HTML archives and multi-user support; data stays in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and create the first account - it becomes the administrator; registration stays open until you disable it in Settings. All bookmarks, tags and archives live in DockerAppData/linkdingdocker/data. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[nb-no]
+name         = "Linkding"
+auth         = "sissbruecker"
+version      = "@@VERSION@@"
+descript     = "Linkding is a minimal, fast bookmark manager: save links from the browser with the bookmarklet or extension, tag them, search titles, descriptions and full text, and keep an HTML archive of the pages you care about. It is self-hosted, has no ads or tracking, supports multiple users, and keeps everything in one SQLite database inside the application data folder."
+release_note = "1. First release: Linkding 1.47.0 from Docker Hub as a non-root container. Fast bookmark manager with tags, full-text search, HTML archives and multi-user support; data stays in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and create the first account - it becomes the administrator; registration stays open until you disable it in Settings. All bookmarks, tags and archives live in DockerAppData/linkdingdocker/data. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[nl-nl]
+name         = "Linkding"
+auth         = "sissbruecker"
+version      = "@@VERSION@@"
+descript     = "Linkding is a minimal, fast bookmark manager: save links from the browser with the bookmarklet or extension, tag them, search titles, descriptions and full text, and keep an HTML archive of the pages you care about. It is self-hosted, has no ads or tracking, supports multiple users, and keeps everything in one SQLite database inside the application data folder."
+release_note = "1. First release: Linkding 1.47.0 from Docker Hub as a non-root container. Fast bookmark manager with tags, full-text search, HTML archives and multi-user support; data stays in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and create the first account - it becomes the administrator; registration stays open until you disable it in Settings. All bookmarks, tags and archives live in DockerAppData/linkdingdocker/data. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[sv-se]
+name         = "Linkding"
+auth         = "sissbruecker"
+version      = "@@VERSION@@"
+descript     = "Linkding is a minimal, fast bookmark manager: save links from the browser with the bookmarklet or extension, tag them, search titles, descriptions and full text, and keep an HTML archive of the pages you care about. It is self-hosted, has no ads or tracking, supports multiple users, and keeps everything in one SQLite database inside the application data folder."
+release_note = "1. First release: Linkding 1.47.0 from Docker Hub as a non-root container. Fast bookmark manager with tags, full-text search, HTML archives and multi-user support; data stays in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and create the first account - it becomes the administrator; registration stays open until you disable it in Settings. All bookmarks, tags and archives live in DockerAppData/linkdingdocker/data. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[th-th]
+name         = "Linkding"
+auth         = "sissbruecker"
+version      = "@@VERSION@@"
+descript     = "Linkding is a minimal, fast bookmark manager: save links from the browser with the bookmarklet or extension, tag them, search titles, descriptions and full text, and keep an HTML archive of the pages you care about. It is self-hosted, has no ads or tracking, supports multiple users, and keeps everything in one SQLite database inside the application data folder."
+release_note = "1. First release: Linkding 1.47.0 from Docker Hub as a non-root container. Fast bookmark manager with tags, full-text search, HTML archives and multi-user support; data stays in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and create the first account - it becomes the administrator; registration stays open until you disable it in Settings. All bookmarks, tags and archives live in DockerAppData/linkdingdocker/data. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
+[vi-vn]
+name         = "Linkding"
+auth         = "sissbruecker"
+version      = "@@VERSION@@"
+descript     = "Linkding is a minimal, fast bookmark manager: save links from the browser with the bookmarklet or extension, tag them, search titles, descriptions and full text, and keep an HTML archive of the pages you care about. It is self-hosted, has no ads or tracking, supports multiple users, and keeps everything in one SQLite database inside the application data folder."
+release_note = "1. First release: Linkding 1.47.0 from Docker Hub as a non-root container. Fast bookmark manager with tags, full-text search, HTML archives and multi-user support; data stays in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the web UI and create the first account - it becomes the administrator; registration stays open until you disable it in Settings. All bookmarks, tags and archives live in DockerAppData/linkdingdocker/data. The UI is plain HTTP - put it behind a TLS reverse proxy before exposing it to the internet. Back up the data folder before uninstalling with data removal."
+
